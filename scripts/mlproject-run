@@ -1,2 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from mlproject.distance import haversine
+
+lat1, lon1 = 48.865070, 2.380009
+lat2, lon2 = 49., 2.4
+
+distance = haversine(lon1, lat1, lon2, lat2)
+print(f'{distance:.4f}')
